@@ -37,6 +37,11 @@ logger.info(
 )
 
 
+@app.get("/")
+def read_root():
+    return {"message": "Email CRM API is running!"}
+
+
 @app.get("/health")
 def health_check():
     """Health check endpoint used by load balancers and monitoring."""
