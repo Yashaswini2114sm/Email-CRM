@@ -42,6 +42,25 @@ def read_root():
     return {"message": "Email CRM API is running!"}
 
 
+@app.get("/debug")
+def debug_crash():
+    import traceback
+    from src.core.security import get_password_hash
+    from src.database.session import SessionLocal
+    from sqlalchemy import text
+    try:
+        # Test bcrypt
+        h = get_password_hash("test")
+        
+        # Test DB
+        db = SessionLocal()
+        db.execute(text("SELECT 1"))
+        db.close()
+        return {"status": "ok", "hash": h}
+    except Exception as e:
+        return {"error": str(e), "traceback": traceback.format_exc()}
+
+
 @app.get("/health")
 def health_check():
     """Health check endpoint used by load balancers and monitoring."""
