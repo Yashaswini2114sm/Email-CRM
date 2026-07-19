@@ -26,7 +26,4 @@ services:
         destination: /index.html
     envVars:
       - key: VITE_API_URL
-        fromService:
-          type: web
-          name: email-crm-api
-          property: host
+        value: https://email-crm-api.onrender.com
