@@ -1,4 +1,8 @@
-const API_BASE_URL = (import.meta.env.VITE_API_URL || '') + '/api/v1';
+let _apiUrl = import.meta.env.VITE_API_URL || '';
+if (_apiUrl && !_apiUrl.startsWith('http')) {
+  _apiUrl = 'https://' + _apiUrl;
+}
+const API_BASE_URL = _apiUrl + '/api/v1';
 
 class ApiError extends Error {
   constructor(message, status, data) {
