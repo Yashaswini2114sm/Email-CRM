@@ -1,0 +1,28 @@
+# Virtual environment
+venv/
+
+# Environment variables (SECRETS - never commit this!)
+.env
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# IDE
+.vscode/
+.idea/
+
+# Uploads (actual files, not the directory)
+uploads/*
+!uploads/.gitkeep
+
+# Testing
+.pytest_cache/
+htmlcov/
+.coverage
+
+# Build artifacts
+*.egg-info/
+dist/
+build/

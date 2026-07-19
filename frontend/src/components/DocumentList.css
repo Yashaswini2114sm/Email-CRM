@@ -1,0 +1,92 @@
+.document-list-container {
+  margin-top: var(--spacing-lg);
+  padding: var(--spacing-md);
+  background-color: var(--color-background);
+  border-radius: var(--border-radius);
+  border: 1px solid var(--color-border);
+}
+
+.document-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--spacing-md);
+}
+
+.document-header h3 {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-text-main);
+  margin: 0;
+}
+
+.upload-btn {
+  background-color: white;
+  border: 1px solid var(--color-border);
+  padding: 4px 12px;
+  border-radius: var(--border-radius);
+  font-size: 12px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.upload-btn:hover {
+  background-color: var(--color-background);
+}
+
+.no-documents {
+  font-size: 13px;
+  color: var(--color-text-muted);
+  margin: 0;
+}
+
+.document-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}
+
+.document-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--spacing-sm);
+  background-color: white;
+  border: 1px solid var(--color-border);
+  border-radius: 4px;
+}
+
+.doc-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.doc-name {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--color-primary);
+}
+
+.doc-size {
+  font-size: 11px;
+  color: var(--color-text-muted);
+}
+
+.doc-validation {
+  font-size: 11px;
+  padding: 2px 6px;
+  border-radius: 10px;
+}
+
+.doc-validation.valid {
+  background-color: rgba(16, 185, 129, 0.1);
+  color: #10b981;
+}
+
+.doc-validation.invalid {
+  background-color: rgba(239, 68, 68, 0.1);
+  color: #ef4444;
+}

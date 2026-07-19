@@ -1,0 +1,11 @@
+2026-07-19 13:46:49,302 - src.main - INFO - Starting Email CRM API in development mode
+INFO:     Started server process [90539]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8001 (Press CTRL+C to quit)
+2026-07-19 13:46:51,378 - src.services.auth_service - INFO - Created user: test5@example.com
+INFO:     127.0.0.1:52151 - "POST /api/v1/auth/register HTTP/1.1" 201 Created
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [90539]

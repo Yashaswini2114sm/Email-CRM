@@ -1,0 +1,77 @@
+.conversation-thread {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+  padding: var(--spacing-md) 0;
+}
+
+.no-messages {
+  text-align: center;
+  padding: 2rem;
+  color: var(--color-text-muted);
+}
+
+.message-wrapper {
+  display: flex;
+  width: 100%;
+}
+
+.customer-msg {
+  justify-content: flex-start;
+}
+
+.staff-msg {
+  justify-content: flex-end;
+}
+
+.message-bubble {
+  max-width: 75%;
+  padding: var(--spacing-md);
+  border-radius: var(--border-radius);
+  position: relative;
+}
+
+/* Customer styling */
+.message-bubble.customer {
+  background-color: white;
+  border: 1px solid var(--color-border);
+  border-bottom-left-radius: 2px;
+}
+
+/* Agent styling */
+.message-bubble.agent {
+  background-color: #eff6ff;
+  border: 1px solid #bfdbfe;
+  border-bottom-right-radius: 2px;
+}
+
+/* AI styling */
+.message-bubble.ai {
+  background-color: #fdf4ff;
+  border: 1px solid #fbcfe8;
+  border-bottom-right-radius: 2px;
+}
+
+.message-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: var(--spacing-sm);
+  font-size: 12px;
+}
+
+.sender-name {
+  font-weight: 600;
+  color: var(--color-text-main);
+}
+
+.message-time {
+  color: var(--color-text-muted);
+  margin-left: var(--spacing-lg);
+}
+
+.message-content {
+  font-size: 14px;
+  line-height: 1.5;
+  white-space: pre-wrap;
+  color: var(--color-text-main);
+}

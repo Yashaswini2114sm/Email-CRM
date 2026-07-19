@@ -1,0 +1,51 @@
+.badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+/* Status variants */
+.badge-status-open {
+  background-color: rgba(59, 130, 246, 0.1);
+  color: var(--color-status-open);
+}
+
+.badge-status-progress {
+  background-color: rgba(245, 158, 11, 0.1);
+  color: var(--color-status-progress);
+}
+
+.badge-status-resolved {
+  background-color: rgba(16, 185, 129, 0.1);
+  color: var(--color-status-resolved);
+}
+
+.badge-status-closed {
+  background-color: rgba(100, 116, 139, 0.1);
+  color: var(--color-status-closed);
+}
+
+/* Priority variants */
+.badge-priority-low {
+  background-color: rgba(100, 116, 139, 0.1);
+  color: var(--color-priority-low);
+}
+
+.badge-priority-medium {
+  background-color: rgba(59, 130, 246, 0.1);
+  color: var(--color-priority-medium);
+}
+
+.badge-priority-high {
+  background-color: rgba(245, 158, 11, 0.1);
+  color: var(--color-priority-high);
+}
+
+.badge-priority-urgent {
+  background-color: rgba(239, 68, 68, 0.1);
+  color: var(--color-priority-urgent);
+}
